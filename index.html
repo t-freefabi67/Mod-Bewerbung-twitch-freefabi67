@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch Mod Bewerbung</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0e0e10, #1c1c1f);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: #18181b;
+      padding: 40px 30px 30px 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 0 25px rgba(145, 70, 255, 0.4);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    h1 {
+      color: #9146FF;
+      font-size: 28px;
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: none;
+      background: #2c2c2f;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      background: #36363b;
+      box-shadow: 0 0 5px #9146FF;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #9146FF;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #772ce8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bewerbung als Mod</h1>
+    <!-- Formsubmit Formular -->
+    <form action="https://formsubmit.co/el/biyoco" method="POST">
+      <!-- Optionen -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+
+      <label for="twitch">Twitch-Name</label>
+      <input type="text" id="twitch" name="Twitch-Name" placeholder="Dein Twitch-Name" required>
+
+      <label for="opsucht">Was ist dein OPSUCHT Name?</label>
+      <input type="text" id="opsucht" name="OPSucht-Name" placeholder="Dein OPSUCHT Ingame-Name" required>
+
+      <label for="bewerber-email">Deine E-Mail</label>
+      <input type="email" id="bewerber-email" name="email" placeholder="name@example.com" required>
+
+      <label for="alter">Alter</label>
+      <input type="number" id="alter" name="Alter" placeholder="Dein Alter">
+
+      <label for="grund">Warum willst du Mod werden?</label>
+      <textarea id="grund" name="Begründung" placeholder="Schreibe hier deine Motivation..." required></textarea>
+
+      <label for="aktiv">Wie aktiv bist du (Stunden pro Woche)?</label>
+      <input type="text" id="aktiv" name="Aktivität" placeholder="z. B. 10h pro Woche">
+
+      <button type="submit">Bewerbung absenden</button>
+    </form>
+    <div class="footer">© 2025 Freefabi67</div>
+  </div>
+</body>
+</html>
