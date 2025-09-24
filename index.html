@@ -1,178 +1,128 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Twitch Mod Bewerbung</title>
-  <style>
-    html {
-      scroll-behavior: smooth; /* Smooth scroll zum Impressum */
-    }
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #0e0e10, #1c1c1f);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-      flex-direction: column;
-    }
+<meta charset="UTF-8">
+<title>Twitch Mod Bewerbung</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0e0e10, #1c1c1f);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    flex-direction: column;
+  }
 
-    .container {
-      background: #18181b;
-      padding: 40px 30px 30px 30px;
-      border-radius: 15px;
-      width: 100%;
-      max-width: 450px;
-      box-shadow: 0 0 25px rgba(145, 70, 255, 0.4);
-      animation: fadeIn 0.6s ease-in-out;
-    }
+  .container {
+    background: #18181b;
+    padding: 40px 30px 30px 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 25px rgba(145, 70, 255, 0.4);
+    animation: fadeIn 0.6s ease-in-out;
+  }
 
-    h1 {
-      color: #9146FF;
-      font-size: 28px;
-      margin: 0 0 20px 0;
-      text-align: center;
-    }
+  h1 { color: #9146FF; text-align: center; margin-bottom: 20px; }
 
-    label {
-      display: block;
-      margin-top: 15px;
-      text-align: left;
-      font-weight: bold;
-    }
+  label { display: block; margin-top: 15px; font-weight: bold; }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: none;
+    background: #2c2c2f;
+    color: #fff;
+    font-size: 15px;
+  }
+  textarea { resize: vertical; min-height: 100px; }
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 6px;
-      border-radius: 8px;
-      border: none;
-      background: #2c2c2f;
-      color: #fff;
-      font-size: 15px;
-      outline: none;
-      transition: 0.2s;
-    }
+  button { 
+    width: 100%; margin-top: 20px; padding: 14px; border: none; border-radius: 10px;
+    background: #9146FF; color: #fff; font-size: 16px; font-weight: bold; cursor: pointer;
+  }
+  button:hover { background: #772ce8; }
 
-    input:focus, textarea:focus {
-      background: #36363b;
-      box-shadow: 0 0 5px #9146FF;
-    }
+  .footer { margin-top: 20px; font-size: 12px; text-align: center; color: #aaa; }
+  .footer button {
+    background: none; border: 1px solid #aaa; color: #aaa; padding: 2px 8px; border-radius: 5px;
+    cursor: pointer; margin-left: 10px;
+  }
+  .footer button:hover { border-color: #9146FF; color: #9146FF; }
 
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
+  #impressum {
+    display: none; 
+    margin-top: 20px; 
+    font-size: 12px; 
+    color: #aaa; 
+    line-height: 1.4; 
+    max-width: 450px;
+  }
+  #impressum h3 { color: #9146FF; margin-bottom: 5px; }
 
-    button {
-      width: 100%;
-      margin-top: 20px;
-      padding: 14px;
-      border: none;
-      border-radius: 10px;
-      background: #9146FF;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #772ce8;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      text-align: center;
-      color: #aaa;
-    }
-
-    .footer a.button {
-      background-color: #9146FF;
-      color: #fff;
-      padding: 2px 8px;
-      margin-left: 10px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 12px;
-      transition: background 0.3s;
-    }
-
-    .footer a.button:hover {
-      background-color: #772ce8;
-    }
-
-    #impressum {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #aaa;
-      line-height: 1.4;
-      max-width: 450px;
-    }
-    #impressum h3 {
-      color: #9146FF;
-      margin-bottom: 5px;
-    }
-  </style>
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bewerbung als Mod</h1>
-    <!-- Formsubmit Formular -->
-    <form action="https://formsubmit.co/freefabi67.official@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
+<div class="container">
+  <h1>Bewerbung als Mod</h1>
+  <form action="https://formsubmit.co/freefabi67.official@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
 
-      <label for="twitch">Twitch-Name</label>
-      <input type="text" id="twitch" name="Twitch-Name" placeholder="Dein Twitch-Name" required>
+    <label for="twitch">Twitch-Name</label>
+    <input type="text" id="twitch" name="Twitch-Name" placeholder="Dein Twitch-Name" required>
 
-      <label for="opsucht">Was ist dein OPSUCHT Name?</label>
-      <input type="text" id="opsucht" name="OPSucht-Name" placeholder="Dein OPSUCHT Ingame-Name" required>
+    <label for="opsucht">Was ist dein OPSUCHT Name?</label>
+    <input type="text" id="opsucht" name="OPSucht-Name" placeholder="Dein OPSUCHT Ingame-Name" required>
 
-      <label for="bewerber-email">Deine E-Mail</label>
-      <input type="email" id="bewerber-email" name="email" placeholder="name@example.com" required>
+    <label for="bewerber-email">Deine E-Mail</label>
+    <input type="email" id="bewerber-email" name="email" placeholder="name@example.com" required>
 
-      <label for="alter">Alter</label>
-      <input type="number" id="alter" name="Alter" placeholder="Dein Alter">
+    <label for="alter">Alter</label>
+    <input type="number" id="alter" name="Alter" placeholder="Dein Alter">
 
-      <label for="grund">Warum willst du Mod werden?</label>
-      <textarea id="grund" name="Begründung" placeholder="Schreibe hier deine Motivation..." required></textarea>
+    <label for="grund">Warum willst du Mod werden?</label>
+    <textarea id="grund" name="Begründung" placeholder="Schreibe hier deine Motivation..." required></textarea>
 
-      <label for="aktiv">Wie aktiv bist du (Stunden pro Woche)?</label>
-      <input type="text" id="aktiv" name="Aktivität" placeholder="z. B. 10h pro Woche">
+    <label for="aktiv">Wie aktiv bist du (Stunden pro Woche)?</label>
+    <input type="text" id="aktiv" name="Aktivität" placeholder="z. B. 10h pro Woche">
 
-      <button type="submit">Bewerbung absenden</button>
-    </form>
-  </div>
+    <button type="submit">Bewerbung absenden</button>
+  </form>
+</div>
 
-  <!-- Footer mit Impressum-Button -->
-  <div class="footer">
-    © 2025 Freefabi67
-    <a href="#impressum" class="button">Impressum</a>
-  </div>
+<div class="footer">
+  © 2025 Freefabi67
+  <button onclick="toggleImpressum()">Impressum</button>
+</div>
 
-  <!-- Impressum-Sektion -->
-  <div id="impressum">
-    <h3>Impressum</h3>
-    <p>Angaben gemäß § 5 TMG:</p>
-    <p>Freefabi67<br>
-       Musterstraße 12<br>
-       12345 Köln<br>
-       Deutschland</p>
-    <p>Kontakt:<br>
-       E-Mail: <a href="mailto:freefabi67.official@gmail.com" style="color:#aaa;">freefabi67.official@gmail.com</a></p>
-    <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-       Freefabi67</p>
-  </div>
+<div id="impressum">
+  <h3>Impressum</h3>
+  <p>Angaben gemäß § 5 TMG:</p>
+  <p>Freefabi67<br>
+     Musterstraße 12<br>
+     12345 Köln<br>
+     Deutschland</p>
+  <p>Kontakt:<br>
+     E-Mail: <a href="mailto:freefabi67.official@gmail.com" style="color:#aaa;">freefabi67.official@gmail.com</a></p>
+  <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+     Freefabi67</p>
+</div>
+
+<script>
+  function toggleImpressum() {
+    const imp = document.getElementById('impressum');
+    if (imp.style.display === 'none' || imp.style.display === '') {
+      imp.style.display = 'block';
+    } else {
+      imp.style.display = 'none';
+    }
+  }
+</script>
 </body>
 </html>
