@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Twitch Mod Bewerbung</title>
   <style>
+    html {
+      scroll-behavior: smooth; /* Smooth scroll zum Impressum */
+    }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       background: linear-gradient(135deg, #0e0e10, #1c1c1f);
@@ -14,6 +17,7 @@
       min-height: 100vh;
       margin: 0;
       padding: 20px;
+      flex-direction: column;
     }
 
     .container {
@@ -87,10 +91,22 @@
     }
 
     .footer {
-      margin-top: 15px;
+      margin-top: 20px;
       font-size: 12px;
       text-align: center;
       color: #aaa;
+    }
+
+    #impressum {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaa;
+      line-height: 1.4;
+      max-width: 450px;
+    }
+    #impressum h3 {
+      color: #9146FF;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -99,7 +115,6 @@
     <h1>Bewerbung als Mod</h1>
     <!-- Formsubmit Formular -->
     <form action="https://formsubmit.co/freefabi67.official@gmail.com" method="POST">
-      <!-- Optionen -->
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="box">
 
@@ -123,7 +138,26 @@
 
       <button type="submit">Bewerbung absenden</button>
     </form>
-    <div class="footer">© 2025 Freefabi67</div>
+  </div>
+
+  <!-- Footer mit Impressum-Link -->
+  <div class="footer">
+    © 2025 Freefabi67 | 
+    <a href="#impressum" style="color:#aaa; text-decoration:underline;">Impressum</a>
+  </div>
+
+  <!-- Impressum-Sektion -->
+  <div id="impressum">
+    <h3>Impressum</h3>
+    <p>Angaben gemäß § 5 TMG:</p>
+    <p>Freefabi67<br>
+       Musterstraße 12<br>
+       12345 Köln<br>
+       Deutschland</p>
+    <p>Kontakt:<br>
+       E-Mail: <a href="mailto:freefabi67.official@gmail.com" style="color:#aaa;">freefabi67.official@gmail.com</a></p>
+    <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+       Freefabi67</p>
   </div>
 </body>
 </html>
